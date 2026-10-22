@@ -1,0 +1,7 @@
+;; Public package entry point. Both dependencies are pinned by commit.
+;; Session.emit-library is on replikativ/metacarp's carpaccio-on-upstream
+;; branch, on top of cyberwitchery/metacarp main, until it lands upstream.
+(load "https://github.com/replikativ/metacarp@9eef050dca84bd4021420e14896df33441bb69f4"
+  "carp-session/carp-session.carp")
+(load "https://github.com/replikativ/carp-cbor@c89885788e8e6599ad8faf7726aac5396b84d4df")
+(load "src/SessionCbor.carp")

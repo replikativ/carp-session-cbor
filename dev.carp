@@ -1,0 +1,7 @@
+;; Development entry point against adjacent metacarp and carp-cbor checkouts.
+(load "../metacarp/carp-session/carp-session.carp")
+(load "../carp-cbor/Cbor.carp")
+(load "src/SessionCbor.carp")
+(Project.no-echo)
+
+(defn main [] (SessionCbor.main))

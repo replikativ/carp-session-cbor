@@ -1,0 +1,4 @@
+(load "carp-session-cbor.carp")
+(Project.no-echo)
+
+(defn main [] (SessionCbor.main))
